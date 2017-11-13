@@ -30,7 +30,7 @@ open class VendorSigninManager {
             case female = 2
             case none = 0
         }
-        
+        var name: String = ""
         var accessToken: String = ""
         var openId: String = ""
         var avatar: String = ""
@@ -119,6 +119,15 @@ open class VendorSigninManager {
             }
         }
         
+        func isQQ() -> Bool {
+            switch self {
+            case .weibo, .weChat:
+                return false
+            case .qq:
+                return true
+            }
+        }
+        
     }
     
     open func registerAccount(_ account: Account) {
@@ -142,6 +151,9 @@ open class VendorSigninManager {
         return UIApplication.shared.canOpenURL(url)
     }
     public typealias OAuthCompletionHandler = ((VendorSigninManager.Result<Info>)) -> Void
+    
+    
+    
     public func oauth(for platform: SupportedPlatform,acompletionHandler: @escaping OAuthCompletionHandler) {
         
         var scope: String? = nil
@@ -173,7 +185,7 @@ open class VendorSigninManager {
                         acompletionHandler(.error(Error.invalidUserInfo))
                         return
                     }
-                    let token: String = (userInfo["access_token"] as? String) ?? ""
+                    let name: String = (userInfo["nickname"] as? String) ?? ""
                     let openId: String = (userInfo["openid"] as? String) ?? ""
                     let avatar: String = (userInfo["headimgurl"] as? String) ?? ""
                     
@@ -186,13 +198,74 @@ open class VendorSigninManager {
                         
                     }()
                     
-                    let info = Info.init(accessToken: token, openId: openId, avatar: avatar, gender: gender)
+                    let info = Info.init(name: name, accessToken: token, openId: openId, avatar: avatar, gender: gender)
                     acompletionHandler(.success(info))
                 })
                 break
             case .weibo:
+                guard
+                    let unwrappedInfo = dict,
+                    let token = (unwrappedInfo["access_token"] as? String) ?? (unwrappedInfo["accessToken"] as? String),
+                    let userID = (unwrappedInfo["uid"] as? String) ?? (unwrappedInfo["userID"] as? String) else {
+                        acompletionHandler(.error(Error.invalidUserInfo))
+                        return
+                }
+                
+                let userInfoAPI = "https://api.weibo.com/2/users/show.json"
+                let parameters = [
+                    "uid": userID,
+                    "access_token": token
+                ]
+                
+                // fetch UserInfo by userInfoAPI
+                SimpleNetworking.sharedInstance.request(userInfoAPI, method: .get, parameters: parameters) { (userInfo, _, _) in
+                    print("userInfo \(String(describing: userInfo))")
+                }
                 break
             case .qq:
+                guard
+                    let unwrappedInfo = dict,
+                    let token = unwrappedInfo["access_token"] as? String,
+                    let openID = unwrappedInfo["openid"] as? String else {
+                        return
+                }
+                
+                let query = "get_user_info"
+                let userInfoAPI = "https://graph.qq.com/user/\(query)"
+                
+                var parameters = [
+                    "openid": openID,
+                    "access_token": token,
+                ]
+                
+                guard let qqAcctont = self.accountSet.first(where: { $0.isQQ() }) else {
+                    acompletionHandler(.error(Error.invalidUserInfo))
+                    return
+                }
+                parameters["oauth_consumer_key"] = qqAcctont.appID
+                // fetch UserInfo by userInfoAPI
+                SimpleNetworking.sharedInstance.request(userInfoAPI, method: .get, parameters: parameters) { (userInfo, _, _) in
+                    guard let info = userInfo else { return }
+                    let name = (info["nickname"] as? String) ?? ""
+                    let avatar = (info["figureurl_qq_1"] as? String) ?? ""
+                    let gender: Info.Gender = {
+                        if let value = (info["gender"] as? String){
+                            if value == "男" {
+                                return .male
+                            } else {
+                                return .female
+                            }
+                        }
+                        return .none
+                        
+                    }()
+                    let vendorinfo = Info.init(name: name, accessToken: token, openId: openID, avatar: avatar, gender: gender)
+                    acompletionHandler(.success(vendorinfo))
+                    
+                }
+                
+                // More API
+                // http://wiki.open.qq.com/wiki/website/API%E5%88%97%E8%A1%A8
                 break
             }
         }

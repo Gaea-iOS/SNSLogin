@@ -38,7 +38,7 @@ class ViewController: UITableViewController {
         let weiboAccount = VendorSigninManager.Account.weibo(
             appID: "379457724",
             appKey: "3ed1d2f34909009dda68e379e1898150",
-            redirectURL: ""
+            redirectURL: "http://sns.whalecloud.com/sina2/callback"
         )
         
         let accounts: [VendorSigninManager.Account] = [wechatAccount,qqAccount,weiboAccount]
@@ -60,8 +60,25 @@ class ViewController: UITableViewController {
             })
             break
         case 1:
-            break
+            VendorSigninFucker.shared.oauth(for: .qq, acompletionHandler: { (result) in
+                switch result {
+                case .success(let info):
+                    print(info)
+                    break
+                case .error(_):
+                    break
+                }
+            })
         case 2:
+            VendorSigninFucker.shared.oauth(for: .weibo, acompletionHandler: { (result) in
+                switch result {
+                case .success(let info):
+                    print(info)
+                    break
+                case .error(_):
+                    break
+                }
+            })
             break
         default:
             break
