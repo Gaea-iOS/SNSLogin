@@ -1021,10 +1021,16 @@ extension MonkeyKing {
                     "SSO_From": "SendMessageToWeiboViewController"
                     ]
                 )
+//                let appData = NSKeyedArchiver.archivedData(withRootObject: [
+//                    "appKey": appID,
+//                    "bundleID": Bundle.main.monkeyking_bundleID ?? "",
+//                    "name": Bundle.main.monkeyking_displayName ?? ""
+//                    ]
+//                )
                 let appData = NSKeyedArchiver.archivedData(withRootObject: [
                     "appKey": appID,
-                    "bundleID": Bundle.main.monkeyking_bundleID ?? "",
-                    "name": Bundle.main.monkeyking_displayName ?? ""
+                    "bundleID": "com.yoyo.huaying",
+                    "name": "观赛日"
                     ]
                 )
                 let authItems: [[String: Any]] = [

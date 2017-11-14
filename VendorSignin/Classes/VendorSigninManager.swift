@@ -220,6 +220,25 @@ open class VendorSigninManager {
                 // fetch UserInfo by userInfoAPI
                 SimpleNetworking.sharedInstance.request(userInfoAPI, method: .get, parameters: parameters) { (userInfo, _, _) in
                     print("userInfo \(String(describing: userInfo))")
+                    guard let info = userInfo else {
+                        acompletionHandler(.error(Error.invalidUserInfo))
+                        return
+                    }
+                    let name: String = (info["screen_name"] as? String) ?? ""
+                    let avatar: String = (info["profile_image_url"] as? String) ?? ""
+                    let gender: Info.Gender = {
+                        if let value = (info["gender"] as? String){
+                            if value == "m" {
+                                return .male
+                            } else {
+                                return .female
+                            }
+                        }
+                        return .none
+                        
+                    }()
+                    let vendorinfo = Info.init(name: name, accessToken: token, openId: userID, avatar: avatar, gender: gender)
+                    acompletionHandler(.success(vendorinfo))
                 }
                 break
             case .qq:
@@ -227,6 +246,8 @@ open class VendorSigninManager {
                     let unwrappedInfo = dict,
                     let token = unwrappedInfo["access_token"] as? String,
                     let openID = unwrappedInfo["openid"] as? String else {
+                        
+                        acompletionHandler(.error(Error.invalidUserInfo))
                         return
                 }
                 
