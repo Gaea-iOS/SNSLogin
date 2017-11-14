@@ -167,7 +167,9 @@ public class SimpleNetworking {
             var json: [String: Any]?
 
             defer {
-                completionHandler(json, response, error)
+                DispatchQueue.main.async {
+                    completionHandler(json, response, error)
+                }
             }
 
             guard

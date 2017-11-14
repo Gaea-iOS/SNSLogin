@@ -27,7 +27,7 @@ class ViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     func register() {
-        self.navigationItem.title = "略缩图为图片"
+        self.navigationItem.title = "三方登录"
         let wechatAccount = VendorSigninManager.Account.weChat(
             appID: "wxd5303f3621dd900d",
             appKey: "a11e59226e19691a2f3df68fdec086d3"
@@ -53,6 +53,7 @@ class ViewController: UITableViewController {
                 switch result {
                 case .success(let info):
                     print(info)
+                    self.presentInfo(info: info)
                     break
                 case .error(_):
                     break
@@ -64,6 +65,7 @@ class ViewController: UITableViewController {
                 switch result {
                 case .success(let info):
                     print(info)
+                    self.presentInfo(info: info)
                     break
                 case .error(_):
                     break
@@ -74,6 +76,7 @@ class ViewController: UITableViewController {
                 switch result {
                 case .success(let info):
                     print(info)
+                    self.presentInfo(info: info)
                     break
                 case .error(_):
                     break
@@ -83,6 +86,13 @@ class ViewController: UITableViewController {
         default:
             break
         }
+    }
+    
+    func presentInfo(info: VendorSigninManager.Info) {
+        let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+        let alertVc = UIAlertController(title: "OAuth", message: "\(info)", preferredStyle: UIAlertControllerStyle.alert)
+        alertVc.addAction(action)
+        self.present(alertVc, animated: true, completion: nil)
     }
 
 }
