@@ -30,11 +30,11 @@ open class VendorSigninManager {
             case female = 2
             case none = 0
         }
-        var name: String = ""
-        var accessToken: String = ""
-        var openId: String = ""
-        var avatar: String = ""
-        var gender: Gender = .none
+        public var name: String = ""
+        public var accessToken: String = ""
+        public var openId: String = ""
+        public var avatar: String = ""
+        public var gender: Gender = .none
     }
     
     public enum SupportedPlatform {
