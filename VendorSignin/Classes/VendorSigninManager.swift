@@ -35,6 +35,7 @@ open class VendorSigninManager {
         public var openId: String = ""
         public var avatar: String = ""
         public var gender: Gender = .none
+        public var unionId: String = ""
     }
     
     public enum SupportedPlatform {
@@ -188,7 +189,7 @@ open class VendorSigninManager {
                     let name: String = (userInfo["nickname"] as? String) ?? ""
                     let openId: String = (userInfo["openid"] as? String) ?? ""
                     let avatar: String = (userInfo["headimgurl"] as? String) ?? ""
-                    
+                    let unionId: String = (userInfo["unionid"] as? String) ?? ""
                     let gender: Info.Gender = {
                         if let value = (userInfo["sex"] as? Int),
                             let gender = Info.Gender.init(rawValue: value){
@@ -198,7 +199,14 @@ open class VendorSigninManager {
                         
                     }()
                     
-                    let info = Info.init(name: name, accessToken: token, openId: openId, avatar: avatar, gender: gender)
+                    let info = Info.init(
+                        name: name,
+                        accessToken: token,
+                        openId: openId,
+                        avatar: avatar,
+                        gender: gender,
+                        unionId: unionId
+                    )
                     acompletionHandler(.success(info))
                 })
                 break
@@ -237,7 +245,14 @@ open class VendorSigninManager {
                         return .none
                         
                     }()
-                    let vendorinfo = Info.init(name: name, accessToken: token, openId: userID, avatar: avatar, gender: gender)
+                    let vendorinfo = Info(
+                        name: name,
+                        accessToken: token,
+                        openId: userID,
+                        avatar: avatar,
+                        gender: gender,
+                        unionId: "" // none
+                    )
                     acompletionHandler(.success(vendorinfo))
                 }
                 break
@@ -280,7 +295,14 @@ open class VendorSigninManager {
                         return .none
                         
                     }()
-                    let vendorinfo = Info.init(name: name, accessToken: token, openId: openID, avatar: avatar, gender: gender)
+                    let vendorinfo = Info(
+                        name: name,
+                        accessToken:token,
+                        openId: openID,
+                        avatar: avatar,
+                        gender: gender,
+                        unionId: ""
+                    )
                     acompletionHandler(.success(vendorinfo))
                     
                 }
