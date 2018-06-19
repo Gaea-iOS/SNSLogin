@@ -21,7 +21,7 @@
   "source_files": "VendorSignin/Classes/**/*",
   "dependencies": {
     "MonkeyKing": [
-      "~> 1.3.0"
+      "~> 1.4.0"
     ]
   }
 }

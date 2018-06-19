@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26DE7C11BE2A791D5A64D920585A4996 /* MonkeyKingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76818BE888D6FD9ABE46FF3A0A13AF0C /* MonkeyKingError.swift */; };
 		2A7AE5F3072DF3FFFB7D0DC1AFC01D6F /* Pods-VendorSignin_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B62C304BA0C7C368431F758154C1850 /* Pods-VendorSignin_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2C6544B3E63017CE346A54A1409F76 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ABB891C7C5744CE296CF49149A79F /* Networking.swift */; };
 		326CD8626BE9877487A21F3D79C2BED4 /* Pods-VendorSignin_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F48B7CD6EE1DE819CEBB24BD5763A59 /* Pods-VendorSignin_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3472A267E6B50A5F3500D556D2C36706 /* MonkeyKing-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1CCCD4F8689B1CAC0C7595D4CF96CD /* MonkeyKing-dummy.m */; };
 		35949BBADDB17641AC43932980C89526 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5B92163EEA0136EF9A0DCDFFD4429F /* Foundation.framework */; };
-		37A13FCBB7803DF7A0BFB11CBE18743E /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E64DAA4E9DEB5FE10FFD2006D615956 /* ReplaceMe.swift */; };
-		3A675836EB8757F53AF2E35B046BA7FC /* MonkeyKing+WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C1CDC8E0F37C7C0943278B033577F /* MonkeyKing+WebView.swift */; };
-		4265DB719873378C8A204CF0C3092257 /* MonkeyKing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8860D6CDEA8BDD406580B5EFCAC63959 /* MonkeyKing.swift */; };
 		61116DECFCFF5107D7027C05BFD82D8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5B92163EEA0136EF9A0DCDFFD4429F /* Foundation.framework */; };
-		61847D86232A75278323CF90D65E9795 /* VendorSignin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F21E3A632E84811F335DE9D28AB33C30 /* VendorSignin-dummy.m */; };
-		7C75F890079B7135C8873C41F94DBD91 /* VendorSigninManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CB7B14D82ACC97FA3D9CCEE46E251F /* VendorSigninManager.swift */; };
+		66119FAA025668A8EE844D41E1C8F29F /* VendorSignin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F21E3A632E84811F335DE9D28AB33C30 /* VendorSignin-dummy.m */; };
+		7EDDFF437831DDE170037504A341D9F5 /* MonkeyKing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9BC01C08C4D0CB613A28744DAA1A4C /* MonkeyKing.swift */; };
 		87294DFA8C4745EA0C69266A7B806FA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5B92163EEA0136EF9A0DCDFFD4429F /* Foundation.framework */; };
-		8AE97FD1A28582DF24DC2B8F19FE329E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454FC524DBEC58BBF7C853DA4A3876A7 /* Extensions.swift */; };
+		88199DA953CDD498574EE1A0F9F27D7C /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66AF924608AE640AC7F579183D52067 /* ReplaceMe.swift */; };
+		8C2594A56405DF1094696F3E4408B654 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E239198045974E8B21B4147F993BB /* Helpers.swift */; };
+		8D4D5F66AEFFD142651FBD4460CCDC6A /* MonkeyKing+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097691AE8CAE1446D9BA81E48B307055 /* MonkeyKing+Error.swift */; };
+		8E3A8DD496D1CC2A5E67D54BA99483F3 /* VendorSigninManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C4CA21E8E122EE21984C8DD94EDBEE /* VendorSigninManager.swift */; };
+		904273F693599A160024FF2F0347FEDC /* MonkeyKing+WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0760B24839DDDFC455A1089E70BEF76 /* MonkeyKing+WebView.swift */; };
+		936E8199F9D768544E3B33407E19668A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979C380B860F74DC42E10FDFBDE71A9F /* Extensions.swift */; };
 		95C908582EEC2218D4C8BB3864B56073 /* Pods-VendorSignin_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C902AC629BBCBDE773C3C6D15E4D1DE3 /* Pods-VendorSignin_Example-dummy.m */; };
+		9C228EEE48987FBD019266078463BF14 /* SimpleNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C33F039836BB18C53809BF78D447546 /* SimpleNetworking.swift */; };
 		9CA396B9041D06EC8063F88A17019393 /* VendorSignin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 812175F78EA95F7FF6ABFC7670086742 /* VendorSignin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A006DE255984E6DE3FA1F4FD932A18DA /* Pods-VendorSignin_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A5587D28E805911BA0DD607BE3F52 /* Pods-VendorSignin_Tests-dummy.m */; };
-		AF63D83A1FB9910D00101D91 /* SimpleNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF63D8391FB9910D00101D91 /* SimpleNetworking.swift */; };
 		B1EE84885A2CE9373E7274466F80DABF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5B92163EEA0136EF9A0DCDFFD4429F /* Foundation.framework */; };
-		D9F6A3B2DCD5675CF6ED5B35A51D5200 /* MonkeyKing-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B5FD87E2B383B858D07ADC9F9C8029 /* MonkeyKing-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBC1445336FEC1DE8B35E9A306F2F4DA /* AnyActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D36340DD4ABAEC3FE8ACBB031F0514 /* AnyActivity.swift */; };
+		B54EC90EE32EEBFA707BF7BC02F318E4 /* AnyActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D1747D7E9DA8AA08946FB9EA031DC0 /* AnyActivity.swift */; };
+		CB95D76D5E5AC28B5D74B9A68F35A1A0 /* MonkeyKing-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2B6A9A05956B54E797B4E7293536B0 /* MonkeyKing-dummy.m */; };
+		D9F6A3B2DCD5675CF6ED5B35A51D5200 /* MonkeyKing-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C1F9A466F083878BAE45918AAE0432 /* MonkeyKing-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8F322EE43CC8B51A62F69CA536178B1 /* MonkeyKing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2089FEEEE89410FA8CFA4B06E7AEC3B /* MonkeyKing.framework */; };
-		EBE00D2CF53D35FD947FDCA74283D9A5 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756B1277CFDC7F266BDFA73BF90DBC7 /* Networking.swift */; };
-		FB79797B24B81726A7FAFC9E085FB737 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197DFCF700EA32B46D072157D464E19 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,49 +57,49 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00D36340DD4ABAEC3FE8ACBB031F0514 /* AnyActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyActivity.swift; path = Sources/AnyActivity.swift; sourceTree = "<group>"; };
+		097691AE8CAE1446D9BA81E48B307055 /* MonkeyKing+Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MonkeyKing+Error.swift"; path = "Sources/MonkeyKing+Error.swift"; sourceTree = "<group>"; };
 		0B62C304BA0C7C368431F758154C1850 /* Pods-VendorSignin_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VendorSignin_Example-umbrella.h"; sourceTree = "<group>"; };
-		0BD72CD85618595E7B0623873744103C /* Pods_VendorSignin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VendorSignin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E64DAA4E9DEB5FE10FFD2006D615956 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
-		16B5FD87E2B383B858D07ADC9F9C8029 /* MonkeyKing-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MonkeyKing-umbrella.h"; sourceTree = "<group>"; };
+		0BD72CD85618595E7B0623873744103C /* Pods_VendorSignin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VendorSignin_Example.framework; path = "Pods-VendorSignin_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		179E239198045974E8B21B4147F993BB /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/Helpers.swift; sourceTree = "<group>"; };
+		1B4704FC37AECC3812628293CF334E55 /* MonkeyKing.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MonkeyKing.modulemap; sourceTree = "<group>"; };
 		1BFB5063FB6DB12EDE9107D974FA7076 /* Pods-VendorSignin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VendorSignin_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1D2A5587D28E805911BA0DD607BE3F52 /* Pods-VendorSignin_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VendorSignin_Tests-dummy.m"; sourceTree = "<group>"; };
 		1F48B7CD6EE1DE819CEBB24BD5763A59 /* Pods-VendorSignin_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VendorSignin_Tests-umbrella.h"; sourceTree = "<group>"; };
-		2B4FB665408B719AEEC482657CE7084C /* MonkeyKing.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MonkeyKing.modulemap; sourceTree = "<group>"; };
+		24D1747D7E9DA8AA08946FB9EA031DC0 /* AnyActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyActivity.swift; path = Sources/AnyActivity.swift; sourceTree = "<group>"; };
+		2A0ABB891C7C5744CE296CF49149A79F /* Networking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Networking.swift; path = Sources/Networking.swift; sourceTree = "<group>"; };
 		37F39D9AC2EE88C2AE847951AADA61E7 /* Pods-VendorSignin_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VendorSignin_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		3ADDBCA76F6ED90534155EBF5BD37CD5 /* Pods-VendorSignin_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VendorSignin_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3C33F039836BB18C53809BF78D447546 /* SimpleNetworking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SimpleNetworking.swift; sourceTree = "<group>"; };
 		3E5B92163EEA0136EF9A0DCDFFD4429F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4400AAED02E3C4B6947770645722E91C /* Pods-VendorSignin_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VendorSignin_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		454FC524DBEC58BBF7C853DA4A3876A7 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/Extensions.swift; sourceTree = "<group>"; };
-		513A19728C03FE3CC378CE67CB215707 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55D480E878875BF52E108A735235061F /* MonkeyKing-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MonkeyKing-prefix.pch"; sourceTree = "<group>"; };
+		51C4CA21E8E122EE21984C8DD94EDBEE /* VendorSigninManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VendorSigninManager.swift; sourceTree = "<group>"; };
 		574F584B6B8330E6D19E65262183EE70 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D54BE4F33B31EA7AC2121B086A7017F /* Pods-VendorSignin_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VendorSignin_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5E1CCCD4F8689B1CAC0C7595D4CF96CD /* MonkeyKing-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MonkeyKing-dummy.m"; sourceTree = "<group>"; };
-		76818BE888D6FD9ABE46FF3A0A13AF0C /* MonkeyKingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MonkeyKingError.swift; path = Sources/MonkeyKingError.swift; sourceTree = "<group>"; };
-		7756B1277CFDC7F266BDFA73BF90DBC7 /* Networking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Networking.swift; path = Sources/Networking.swift; sourceTree = "<group>"; };
-		7B41E0684DF74EA1BC2360B431A1447C /* Pods_VendorSignin_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VendorSignin_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6000D2C946A21565B0040EA90547D6DB /* MonkeyKing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MonkeyKing.xcconfig; sourceTree = "<group>"; };
+		7B2B6A9A05956B54E797B4E7293536B0 /* MonkeyKing-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MonkeyKing-dummy.m"; sourceTree = "<group>"; };
+		7B41E0684DF74EA1BC2360B431A1447C /* Pods_VendorSignin_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VendorSignin_Tests.framework; path = "Pods-VendorSignin_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F685F0A994A73F8B55A7608089FAF48 /* Pods-VendorSignin_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VendorSignin_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		812175F78EA95F7FF6ABFC7670086742 /* VendorSignin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VendorSignin-umbrella.h"; sourceTree = "<group>"; };
-		841A499DF8DF67EC862A0EA428C22558 /* Pods-VendorSignin_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VendorSignin_Example.modulemap"; sourceTree = "<group>"; };
-		8860D6CDEA8BDD406580B5EFCAC63959 /* MonkeyKing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MonkeyKing.swift; path = Sources/MonkeyKing.swift; sourceTree = "<group>"; };
-		8A496F93C5C43FACD1D686B90044633F /* MonkeyKing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MonkeyKing.xcconfig; sourceTree = "<group>"; };
+		841A499DF8DF67EC862A0EA428C22558 /* Pods-VendorSignin_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VendorSignin_Example.modulemap"; sourceTree = "<group>"; };
+		8C9BC01C08C4D0CB613A28744DAA1A4C /* MonkeyKing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MonkeyKing.swift; path = Sources/MonkeyKing.swift; sourceTree = "<group>"; };
 		90C370B8811B6ECDDF98F10C2BA092E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		912C1CDC8E0F37C7C0943278B033577F /* MonkeyKing+WebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MonkeyKing+WebView.swift"; path = "Sources/MonkeyKing+WebView.swift"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93CB7B14D82ACC97FA3D9CCEE46E251F /* VendorSigninManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VendorSigninManager.swift; sourceTree = "<group>"; };
-		9C5291358742B0576115FDCCF9EBBB4C /* VendorSignin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VendorSignin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F80AD736C69F4B66FDBD49A971E310C /* Pods-VendorSignin_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VendorSignin_Tests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		979C380B860F74DC42E10FDFBDE71A9F /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/Extensions.swift; sourceTree = "<group>"; };
+		9C5291358742B0576115FDCCF9EBBB4C /* VendorSignin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VendorSignin.framework; path = VendorSignin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F80AD736C69F4B66FDBD49A971E310C /* Pods-VendorSignin_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VendorSignin_Tests.modulemap"; sourceTree = "<group>"; };
 		9FA97E83B2A33CA22B9CBF2D08BB955C /* VendorSignin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VendorSignin-prefix.pch"; sourceTree = "<group>"; };
-		AA70D634285B28A397D9503797B30F0C /* MonkeyKing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MonkeyKing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF63D8391FB9910D00101D91 /* SimpleNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleNetworking.swift; sourceTree = "<group>"; };
+		A6C1F9A466F083878BAE45918AAE0432 /* MonkeyKing-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MonkeyKing-umbrella.h"; sourceTree = "<group>"; };
+		AA70D634285B28A397D9503797B30F0C /* MonkeyKing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MonkeyKing.framework; path = MonkeyKing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2089FEEEE89410FA8CFA4B06E7AEC3B /* MonkeyKing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MonkeyKing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B66AF924608AE640AC7F579183D52067 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		C6B89B1CE951DB645208125E75480E46 /* MonkeyKing-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MonkeyKing-prefix.pch"; sourceTree = "<group>"; };
 		C902AC629BBCBDE773C3C6D15E4D1DE3 /* Pods-VendorSignin_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VendorSignin_Example-dummy.m"; sourceTree = "<group>"; };
 		D0918D2C228652545A8D9040515A6E91 /* Pods-VendorSignin_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VendorSignin_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		D197DFCF700EA32B46D072157D464E19 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/Helpers.swift; sourceTree = "<group>"; };
 		D6075B7E6C14F3E7E71F2D7BA6ACC0AD /* VendorSignin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VendorSignin.xcconfig; sourceTree = "<group>"; };
-		D8B0C4767B5FF3BE2C1825E89CCCCB85 /* VendorSignin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = VendorSignin.modulemap; sourceTree = "<group>"; };
+		D6083F5406BE05BB7DC5B1F488FEC0BD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8B0C4767B5FF3BE2C1825E89CCCCB85 /* VendorSignin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = VendorSignin.modulemap; sourceTree = "<group>"; };
 		DE4CA9187C5E02969C5199A49FCE14D8 /* Pods-VendorSignin_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VendorSignin_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E0760B24839DDDFC455A1089E70BEF76 /* MonkeyKing+WebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MonkeyKing+WebView.swift"; path = "Sources/MonkeyKing+WebView.swift"; sourceTree = "<group>"; };
 		E29489DE825D3D9ADCDB14F379568B36 /* Pods-VendorSignin_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VendorSignin_Example-frameworks.sh"; sourceTree = "<group>"; };
 		EB1A753656834E2ECDD4878DDB466472 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1D659454C81DF14BF94373F9CB31F3C /* Pods-VendorSignin_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VendorSignin_Example-resources.sh"; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 		18643899F561976B06AAC212E21C0694 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				26B205322DE9698D0E4D29036B352DD5 /* MonkeyKing */,
+				831816D7A6A5253DD8661C8A91B2839F /* MonkeyKing */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -177,21 +177,6 @@
 				3E5B92163EEA0136EF9A0DCDFFD4429F /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		26B205322DE9698D0E4D29036B352DD5 /* MonkeyKing */ = {
-			isa = PBXGroup;
-			children = (
-				00D36340DD4ABAEC3FE8ACBB031F0514 /* AnyActivity.swift */,
-				454FC524DBEC58BBF7C853DA4A3876A7 /* Extensions.swift */,
-				D197DFCF700EA32B46D072157D464E19 /* Helpers.swift */,
-				8860D6CDEA8BDD406580B5EFCAC63959 /* MonkeyKing.swift */,
-				912C1CDC8E0F37C7C0943278B033577F /* MonkeyKing+WebView.swift */,
-				76818BE888D6FD9ABE46FF3A0A13AF0C /* MonkeyKingError.swift */,
-				7756B1277CFDC7F266BDFA73BF90DBC7 /* Networking.swift */,
-				E67B979809FACC90DB34D8AB521BD4F8 /* Support Files */,
-			);
-			path = MonkeyKing;
 			sourceTree = "<group>";
 		};
 		37083AC155C7B0585DB057637C416DFF /* Products */ = {
@@ -223,6 +208,17 @@
 			path = "Target Support Files/Pods-VendorSignin_Example";
 			sourceTree = "<group>";
 		};
+		6B48D6A7AE9640EB995004B19122D968 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B66AF924608AE640AC7F579183D52067 /* ReplaceMe.swift */,
+				3C33F039836BB18C53809BF78D447546 /* SimpleNetworking.swift */,
+				51C4CA21E8E122EE21984C8DD94EDBEE /* VendorSigninManager.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +231,22 @@
 			);
 			sourceTree = "<group>";
 		};
+		831816D7A6A5253DD8661C8A91B2839F /* MonkeyKing */ = {
+			isa = PBXGroup;
+			children = (
+				24D1747D7E9DA8AA08946FB9EA031DC0 /* AnyActivity.swift */,
+				979C380B860F74DC42E10FDFBDE71A9F /* Extensions.swift */,
+				179E239198045974E8B21B4147F993BB /* Helpers.swift */,
+				8C9BC01C08C4D0CB613A28744DAA1A4C /* MonkeyKing.swift */,
+				097691AE8CAE1446D9BA81E48B307055 /* MonkeyKing+Error.swift */,
+				E0760B24839DDDFC455A1089E70BEF76 /* MonkeyKing+WebView.swift */,
+				2A0ABB891C7C5744CE296CF49149A79F /* Networking.swift */,
+				B43B34B0F5DF33BED2469A9555ACBF2C /* Support Files */,
+			);
+			name = MonkeyKing;
+			path = MonkeyKing;
+			sourceTree = "<group>";
+		};
 		98FB4EB519FE58DC719CAAB8F58F5A8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,16 +254,6 @@
 				1E5725EEC6C9F3FE77C882BF90A2AA0E /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9955C0D9DF7B2131BA6B7BD5FD50ECAD /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				0E64DAA4E9DEB5FE10FFD2006D615956 /* ReplaceMe.swift */,
-				93CB7B14D82ACC97FA3D9CCEE46E251F /* VendorSigninManager.swift */,
-				AF63D8391FB9910D00101D91 /* SimpleNetworking.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		9C1CFDFF6013DBF041E8ADCCFD1F85D6 /* Support Files */ = {
@@ -268,11 +270,34 @@
 			path = "Example/Pods/Target Support Files/VendorSignin";
 			sourceTree = "<group>";
 		};
+		9F585BC26BD2A9D6D0F63129E93762B4 /* VendorSignin */ = {
+			isa = PBXGroup;
+			children = (
+				6B48D6A7AE9640EB995004B19122D968 /* Classes */,
+			);
+			name = VendorSignin;
+			path = VendorSignin;
+			sourceTree = "<group>";
+		};
+		B43B34B0F5DF33BED2469A9555ACBF2C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6083F5406BE05BB7DC5B1F488FEC0BD /* Info.plist */,
+				1B4704FC37AECC3812628293CF334E55 /* MonkeyKing.modulemap */,
+				6000D2C946A21565B0040EA90547D6DB /* MonkeyKing.xcconfig */,
+				7B2B6A9A05956B54E797B4E7293536B0 /* MonkeyKing-dummy.m */,
+				C6B89B1CE951DB645208125E75480E46 /* MonkeyKing-prefix.pch */,
+				A6C1F9A466F083878BAE45918AAE0432 /* MonkeyKing-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MonkeyKing";
+			sourceTree = "<group>";
+		};
 		D006C5CCF8552CAE9581F216EC1C85E1 /* VendorSignin */ = {
 			isa = PBXGroup;
 			children = (
 				9C1CFDFF6013DBF041E8ADCCFD1F85D6 /* Support Files */,
-				F5C0FE47B456EFA70AD2C7ED3D60425C /* VendorSignin */,
+				9F585BC26BD2A9D6D0F63129E93762B4 /* VendorSignin */,
 			);
 			name = VendorSignin;
 			path = ../..;
@@ -285,28 +310,6 @@
 				1295FC22515CE51618EB787B7ED4FD79 /* Pods-VendorSignin_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		E67B979809FACC90DB34D8AB521BD4F8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				513A19728C03FE3CC378CE67CB215707 /* Info.plist */,
-				2B4FB665408B719AEEC482657CE7084C /* MonkeyKing.modulemap */,
-				8A496F93C5C43FACD1D686B90044633F /* MonkeyKing.xcconfig */,
-				5E1CCCD4F8689B1CAC0C7595D4CF96CD /* MonkeyKing-dummy.m */,
-				55D480E878875BF52E108A735235061F /* MonkeyKing-prefix.pch */,
-				16B5FD87E2B383B858D07ADC9F9C8029 /* MonkeyKing-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MonkeyKing";
-			sourceTree = "<group>";
-		};
-		F5C0FE47B456EFA70AD2C7ED3D60425C /* VendorSignin */ = {
-			isa = PBXGroup;
-			children = (
-				9955C0D9DF7B2131BA6B7BD5FD50ECAD /* Classes */,
-			);
-			path = VendorSignin;
 			sourceTree = "<group>";
 		};
 		FE990E82B8B2291CBC143D34BFC1CC9D /* Development Pods */ = {
@@ -359,7 +362,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4990F112F3592D83DD5F9631ECED8B3 /* Build configuration list for PBXNativeTarget "MonkeyKing" */;
 			buildPhases = (
-				BE42535CE219B5D80CB6D2BD1D0C3CC7 /* Sources */,
+				BDA5A64589EEDE10FB1F44A1037A0BE3 /* Sources */,
 				4067F38078580D69B309DDD86644D5AF /* Frameworks */,
 				BC4A5F42FF7822BAB6FCE8762DAB456E /* Headers */,
 			);
@@ -393,7 +396,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 666FCDE37D003FE41C51498CB0C4D902 /* Build configuration list for PBXNativeTarget "VendorSignin" */;
 			buildPhases = (
-				D8535A2BB774A4E97CB33529AF3ADA31 /* Sources */,
+				57E32E3DF34A378F63861DAB53AE6B9C /* Sources */,
 				C754DB44BE42C06E593CEAA1854623EA /* Frameworks */,
 				BEE2F4664F9F6B11F684B5B44F4436E0 /* Headers */,
 			);
@@ -464,29 +467,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE42535CE219B5D80CB6D2BD1D0C3CC7 /* Sources */ = {
+		57E32E3DF34A378F63861DAB53AE6B9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBC1445336FEC1DE8B35E9A306F2F4DA /* AnyActivity.swift in Sources */,
-				8AE97FD1A28582DF24DC2B8F19FE329E /* Extensions.swift in Sources */,
-				FB79797B24B81726A7FAFC9E085FB737 /* Helpers.swift in Sources */,
-				3A675836EB8757F53AF2E35B046BA7FC /* MonkeyKing+WebView.swift in Sources */,
-				3472A267E6B50A5F3500D556D2C36706 /* MonkeyKing-dummy.m in Sources */,
-				4265DB719873378C8A204CF0C3092257 /* MonkeyKing.swift in Sources */,
-				26DE7C11BE2A791D5A64D920585A4996 /* MonkeyKingError.swift in Sources */,
-				EBE00D2CF53D35FD947FDCA74283D9A5 /* Networking.swift in Sources */,
+				88199DA953CDD498574EE1A0F9F27D7C /* ReplaceMe.swift in Sources */,
+				9C228EEE48987FBD019266078463BF14 /* SimpleNetworking.swift in Sources */,
+				66119FAA025668A8EE844D41E1C8F29F /* VendorSignin-dummy.m in Sources */,
+				8E3A8DD496D1CC2A5E67D54BA99483F3 /* VendorSigninManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8535A2BB774A4E97CB33529AF3ADA31 /* Sources */ = {
+		BDA5A64589EEDE10FB1F44A1037A0BE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37A13FCBB7803DF7A0BFB11CBE18743E /* ReplaceMe.swift in Sources */,
-				61847D86232A75278323CF90D65E9795 /* VendorSignin-dummy.m in Sources */,
-				7C75F890079B7135C8873C41F94DBD91 /* VendorSigninManager.swift in Sources */,
-				AF63D83A1FB9910D00101D91 /* SimpleNetworking.swift in Sources */,
+				B54EC90EE32EEBFA707BF7BC02F318E4 /* AnyActivity.swift in Sources */,
+				936E8199F9D768544E3B33407E19668A /* Extensions.swift in Sources */,
+				8C2594A56405DF1094696F3E4408B654 /* Helpers.swift in Sources */,
+				8D4D5F66AEFFD142651FBD4460CCDC6A /* MonkeyKing+Error.swift in Sources */,
+				904273F693599A160024FF2F0347FEDC /* MonkeyKing+WebView.swift in Sources */,
+				CB95D76D5E5AC28B5D74B9A68F35A1A0 /* MonkeyKing-dummy.m in Sources */,
+				7EDDFF437831DDE170037504A341D9F5 /* MonkeyKing.swift in Sources */,
+				2F2C6544B3E63017CE346A54A1409F76 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,7 +609,7 @@
 		};
 		4B37F737A0E9D9C44D7B7642DC5E888A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A496F93C5C43FACD1D686B90044633F /* MonkeyKing.xcconfig */;
+			baseConfigurationReference = 6000D2C946A21565B0040EA90547D6DB /* MonkeyKing.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -631,7 +634,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -704,7 +707,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -739,7 +742,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -832,7 +835,7 @@
 		};
 		DE41DD4D95AE6794AAA89622A00F0AE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A496F93C5C43FACD1D686B90044633F /* MonkeyKing.xcconfig */;
+			baseConfigurationReference = 6000D2C946A21565B0040EA90547D6DB /* MonkeyKing.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -858,7 +861,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

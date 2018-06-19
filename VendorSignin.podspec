@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VendorSignin'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Vendor Signin '
   s.description      = 'Vendor Signin'
   s.homepage         = 'https://github.com/lzc1104/VendorSignin'
@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/lzc1104/VendorSignin.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.source_files = 'VendorSignin/Classes/**/*'
-  s.dependency 'MonkeyKing' ,'~> 1.3.0'
+  s.dependency 'MonkeyKing' ,'~> 1.4.0'
 
 end

@@ -13,15 +13,13 @@ MonkeyKing helps you post messages to Chinese Social Networks, without their bug
 
 MonkeyKing uses the same analysis process of [openshare](https://github.com/100apps/openshare), support share **Text**, **URL**, **Image**, **Audio**, **Video**, and **File** to **WeChat**, **QQ**, **Alipay** or **Weibo**. MonkeyKing also can post messages to Weibo by webpage. (Note: Audio and Video are only specifically for WeChat or QQ, File is only for QQ Dataline)
 
-One more thing: MonkeyKing supports **OAuth**.
-
-And, now MonkeyKing supports **Mobile payment** via WeChat and Alipay!
+MonkeyKing also supports **OAuth** and **Mobile payment** via WeChat and Alipay!
 
 ## Requirements
 
-Swift 3.0, iOS 8.0
+Swift 4, iOS 8
 
-(Swift 2.3, use version 0.9.4)
+(For Swift 3, use version 1.3.0)
 
 ## Examples
 
@@ -125,7 +123,7 @@ Check the demo for more information.
 
 ## Installation
 
-We recommend using Carthage instead of CocoaPods.
+Using Carthage or CocoaPods.
 
 ### Carthage
 
@@ -214,5 +212,4 @@ WeChat logos from [WeChat-Logo](https://github.com/RayPS/WeChat-Logo) by Ray.
 MonkeyKing is available under the [MIT License][mitLink]. See the LICENSE file for more info.
 
 [mitLink]:http://opensource.org/licenses/MIT
-
 
